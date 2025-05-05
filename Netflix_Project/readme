@@ -1,0 +1,56 @@
+# 📊 Netflix Movie Data Analysis Project
+
+## 🔍 Objective
+
+This project explores a dataset of Netflix movies to answer the following key questions:
+
+1. What is the most frequent genre of movies released on Netflix?
+2. Which movie has the highest vote average?
+3. What movie has the highest popularity, and what is its genre?
+4. What movie has the lowest popularity, and what is its genre?
+5. Which year has the most number of movies filmed?
+
+---
+
+## 🛠️ Process & Methodology
+
+After importing the dataset into Python, the following steps were taken:
+
+### ✅ Data Cleaning
+- Checked for and confirmed that **no missing or NaN values** are present.
+- Converted the `Release_Date` column from string to proper **datetime format**, and extracted the **year**.
+- Removed non-essential columns that were irrelevant to the analysis.
+- Normalized the `Genre` column, which originally contained a list of genres, by **exploding it into individual rows** for easier analysis.
+- Used the `pd.cut()` function to **bin continuous variables** into categorical intervals for better grouping and visualization.
+
+### 📈 Basic Analysis Performed
+- Identified the most frequent movie genres.
+- Determined the movie with the **highest vote average**.
+- Found movies with the **highest and lowest popularity**, along with their genres.
+- Analyzed which **year** had the highest number of movie releases.
+
+---
+
+## 🧰 Tools & Libraries Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+---
+
+## 📁 Files
+- `netflix_analysis.ipynb` – Jupyter Notebook with all code and visualizations.
+- `netflix_cleaned.csv` – (optional) Cleaned dataset after preprocessing.
+
+---
+
+## 📌 Conclusion
+
+This analysis provides a quick but insightful view into Netflix’s movie trends, from genres and popularity to viewer ratings and release timelines.
+
+---
+
+
+---
